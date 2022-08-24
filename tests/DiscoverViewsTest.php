@@ -1,6 +1,6 @@
 <?php
 
-use Fluent\RouteDiscovery\Discovery\Discover;
+use OpenDesa\RouteDiscovery\Discovery\Discover;
 use Illuminate\Routing\ViewController;
 
 it('can discover views in a directory', function () {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Single;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\Single;
 
 class MyController
 {

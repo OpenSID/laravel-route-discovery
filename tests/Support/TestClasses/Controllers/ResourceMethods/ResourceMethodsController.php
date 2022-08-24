@@ -1,8 +1,8 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\ResourceMethods;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\ResourceMethods;
 
-use Fluent\RouteDiscovery\Tests\Support\TestClasses\Models\User;
+use OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Models\User;
 use Illuminate\Http\Request;
 
 class ResourceMethodsController

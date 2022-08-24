@@ -1,8 +1,8 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomRouteName;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomRouteName;
 
-use Fluent\RouteDiscovery\Attributes\Route;
+use OpenDesa\RouteDiscovery\Attributes\Route;
 
 class CustomRouteNameController
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultRouteName\Nested;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultRouteName\Nested;
 
 use Illuminate\Foundation\Auth\User;
 

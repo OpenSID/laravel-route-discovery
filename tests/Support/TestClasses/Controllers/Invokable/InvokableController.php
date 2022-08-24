@@ -1,6 +1,6 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Invokable;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\Invokable;
 
 class InvokableController
 {

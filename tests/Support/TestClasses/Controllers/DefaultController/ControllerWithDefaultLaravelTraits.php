@@ -1,6 +1,6 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultController;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultController;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

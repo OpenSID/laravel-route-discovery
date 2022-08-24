@@ -1,6 +1,6 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\NonPublicMethods;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\NonPublicMethods;
 
 class NonPublicMethodsController
 {

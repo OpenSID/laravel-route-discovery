@@ -1,11 +1,11 @@
 <?php
 
-namespace Fluent\RouteDiscovery;
+namespace OpenDesa\RouteDiscovery;
 
-use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
-use Fluent\RouteDiscovery\PendingRoutes\PendingRouteAction;
-use Fluent\RouteDiscovery\PendingRoutes\PendingRouteFactory;
-use Fluent\RouteDiscovery\PendingRouteTransformers\PendingRouteTransformer;
+use OpenDesa\RouteDiscovery\PendingRoutes\PendingRoute;
+use OpenDesa\RouteDiscovery\PendingRoutes\PendingRouteAction;
+use OpenDesa\RouteDiscovery\PendingRoutes\PendingRouteFactory;
+use OpenDesa\RouteDiscovery\PendingRouteTransformers\PendingRouteTransformer;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Collection;
 use SplFileInfo;
@@ -56,7 +56,7 @@ class RouteRegistrar
     /**
      * @param string $directory
      *
-     * @return Collection<\Fluent\RouteDiscovery\PendingRoutes\PendingRoute>
+     * @return Collection<\OpenDesa\RouteDiscovery\PendingRoutes\PendingRoute>
      */
     protected function convertToPendingRoutes(string $directory): Collection
     {

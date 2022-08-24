@@ -1,11 +1,11 @@
 {
-    "name": "agungsugiarto/laravel-route-discovery",
+    "name": "opendesa/laravel-route-discovery",
     "description": "Auto register routes using PHP attributes",
     "keywords": [
         "spatie",
         "laravel-route-discovery"
     ],
-    "homepage": "https://github.com/agungsugiarto/laravel-route-discovery",
+    "homepage": "https://github.com/opensid/laravel-route-discovery",
     "license": "MIT",
     "authors": [
         {
@@ -41,13 +41,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Fluent\\RouteDiscovery\\": "src",
-            "Fluent\\RouteDiscovery\\Database\\Factories\\": "database/factories"
+            "OpenDesa\\RouteDiscovery\\": "src",
+            "OpenDesa\\RouteDiscovery\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Fluent\\RouteDiscovery\\Tests\\": "tests"
+            "OpenDesa\\RouteDiscovery\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -68,7 +68,7 @@
         },
         "laravel": {
             "providers": [
-                "Fluent\\RouteDiscovery\\RouteDiscoveryServiceProvider"
+                "OpenDesa\\RouteDiscovery\\RouteDiscoveryServiceProvider"
             ]
         }
     },

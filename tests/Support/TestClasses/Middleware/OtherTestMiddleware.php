@@ -1,6 +1,6 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Middleware;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

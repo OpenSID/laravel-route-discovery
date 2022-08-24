@@ -1,9 +1,9 @@
 <?php
 
-namespace Fluent\RouteDiscovery\PendingRoutes;
+namespace OpenDesa\RouteDiscovery\PendingRoutes;
 
-use Fluent\RouteDiscovery\Attributes\DiscoveryAttribute;
-use Fluent\RouteDiscovery\Attributes\Route;
+use OpenDesa\RouteDiscovery\Attributes\DiscoveryAttribute;
+use OpenDesa\RouteDiscovery\Attributes\Route;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use ReflectionAttribute;

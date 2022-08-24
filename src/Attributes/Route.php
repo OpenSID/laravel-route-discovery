@@ -1,6 +1,6 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Attributes;
+namespace OpenDesa\RouteDiscovery\Attributes;
 
 use Attribute;
 use Illuminate\Routing\Router;

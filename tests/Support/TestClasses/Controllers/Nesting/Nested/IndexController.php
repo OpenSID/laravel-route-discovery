@@ -1,6 +1,6 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting\Nested;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting\Nested;
 
 class IndexController
 {

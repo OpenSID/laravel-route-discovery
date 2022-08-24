@@ -1,8 +1,8 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideUri;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideUri;
 
-use Fluent\RouteDiscovery\Attributes\Route;
+use OpenDesa\RouteDiscovery\Attributes\Route;
 
 class OverrideUriController
 {

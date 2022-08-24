@@ -22,7 +22,7 @@ Here's how you would add middleware to a controller whose route will be auto dis
 namespace App\Http\Controllers;
 
 use Illuminate\Routing\Middleware\ValidateSignature;
-use Fluent\RouteDiscovery\Attributes\Route;
+use OpenDesa\RouteDiscovery\Attributes\Route;
 
 class MyController
 {

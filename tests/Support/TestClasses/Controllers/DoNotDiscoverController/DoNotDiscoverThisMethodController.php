@@ -1,8 +1,8 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\DoNotDiscoverController;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\DoNotDiscoverController;
 
-use Fluent\RouteDiscovery\Attributes\DoNotDiscover;
+use OpenDesa\RouteDiscovery\Attributes\DoNotDiscover;
 
 class DoNotDiscoverThisMethodController
 {

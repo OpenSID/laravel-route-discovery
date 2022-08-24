@@ -1,14 +1,14 @@
 <?php
 
-use Fluent\RouteDiscovery\Discovery\Discover;
-use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomMethod\CustomMethodController;
-use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultController\ControllerThatExtendsDefaultController;
-use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Single\MyController;
+use OpenDesa\RouteDiscovery\Discovery\Discover;
+use OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomMethod\CustomMethodController;
+use OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultController\ControllerThatExtendsDefaultController;
+use OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\Single\MyController;
 use Illuminate\Support\Facades\Route;
 
 it('can discover controller in a directory', function () {
     Discover::controllers()
-        ->useRootNamespace('Fluent\RouteDiscovery\Tests\\')
+        ->useRootNamespace('OpenDesa\RouteDiscovery\Tests\\')
         ->useBasePath($this->getTestPath())
         ->in(controllersPath('Single'));
 
@@ -18,7 +18,7 @@ it('can discover controller in a directory', function () {
 
 it('does not discover routes for default Laravel skeleton controllers that have public methods', function () {
     Discover::controllers()
-        ->useRootNamespace('Fluent\RouteDiscovery\Tests\\')
+        ->useRootNamespace('OpenDesa\RouteDiscovery\Tests\\')
         ->useBasePath($this->getTestPath())
         ->in(controllersPath('DefaultController'));
 
@@ -28,7 +28,7 @@ it('does not discover routes for default Laravel skeleton controllers that have 
 
 it('can discover controllers with custom methods', function () {
     Discover::controllers()
-        ->useRootNamespace('Fluent\RouteDiscovery\Tests\\')
+        ->useRootNamespace('OpenDesa\RouteDiscovery\Tests\\')
         ->useBasePath($this->getTestPath())
         ->in(controllersPath('CustomMethod'));
 
@@ -44,7 +44,7 @@ it('can discover controllers with custom methods', function () {
 it('can use a prefix when discovering routes', function () {
     Route::prefix('my-prefix')->group(function () {
         Discover::controllers()
-            ->useRootNamespace('Fluent\RouteDiscovery\Tests\\')
+            ->useRootNamespace('OpenDesa\RouteDiscovery\Tests\\')
             ->useBasePath(test()->getTestPath())
             ->in(controllersPath('Single'));
     });

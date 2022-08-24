@@ -1,10 +1,10 @@
 <?php
 
-namespace Fluent\RouteDiscovery\PendingRouteTransformers;
+namespace OpenDesa\RouteDiscovery\PendingRouteTransformers;
 
-use Fluent\RouteDiscovery\Attributes\Where;
-use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
-use Fluent\RouteDiscovery\PendingRoutes\PendingRouteAction;
+use OpenDesa\RouteDiscovery\Attributes\Where;
+use OpenDesa\RouteDiscovery\PendingRoutes\PendingRoute;
+use OpenDesa\RouteDiscovery\PendingRoutes\PendingRouteAction;
 use Illuminate\Support\Collection;
 
 class HandleWheresAttribute implements PendingRouteTransformer

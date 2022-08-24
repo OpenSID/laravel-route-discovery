@@ -1,11 +1,11 @@
 <?php
 
-namespace Fluent\RouteDiscovery\PendingRouteTransformers;
+namespace OpenDesa\RouteDiscovery\PendingRouteTransformers;
 
 use App\Http\Controllers\Controller as DefaultAppController;
-use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
-use Fluent\RouteDiscovery\PendingRoutes\PendingRouteAction;
-use Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultController\ControllerWithDefaultLaravelTraits;
+use OpenDesa\RouteDiscovery\PendingRoutes\PendingRoute;
+use OpenDesa\RouteDiscovery\PendingRoutes\PendingRouteAction;
+use OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultController\ControllerWithDefaultLaravelTraits;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Collection;
 

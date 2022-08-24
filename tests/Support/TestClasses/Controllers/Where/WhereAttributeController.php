@@ -1,8 +1,8 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Where;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\Where;
 
-use Fluent\RouteDiscovery\Attributes\Where;
+use OpenDesa\RouteDiscovery\Attributes\Where;
 use Illuminate\Foundation\Auth\User;
 
 class WhereAttributeController

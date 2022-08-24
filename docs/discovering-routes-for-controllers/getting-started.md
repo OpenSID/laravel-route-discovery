@@ -12,7 +12,7 @@ You can enable route discovery via the routes file.
 ```php
 // in a routes file
 
-use Fluent\RouteDiscovery\Discovery\Discover;
+use OpenDesa\RouteDiscovery\Discovery\Discover;
 
 Discover::controllers()->in(app_path('Http/Controllers'));
 ```

@@ -27,7 +27,7 @@ Here's how you would add middleware to a controller whose's route will be auto d
 namespace App\Http\Controllers;
 
 use Illuminate\Routing\Middleware\ValidateSignature;
-use Fluent\RouteDiscovery\Attributes\Route;
+use OpenDesa\RouteDiscovery\Attributes\Route;
 
 class MyController
 {

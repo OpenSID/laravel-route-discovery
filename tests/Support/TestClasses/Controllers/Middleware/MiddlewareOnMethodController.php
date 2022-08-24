@@ -1,9 +1,9 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Middleware;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\Middleware;
 
-use Fluent\RouteDiscovery\Attributes\Route;
-use Fluent\RouteDiscovery\Tests\Support\TestClasses\Middleware\TestMiddleware;
+use OpenDesa\RouteDiscovery\Attributes\Route;
+use OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Middleware\TestMiddleware;
 
 class MiddlewareOnMethodController
 {

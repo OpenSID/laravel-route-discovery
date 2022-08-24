@@ -1,6 +1,6 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomMethod;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomMethod;
 
 class CustomMethodController
 {

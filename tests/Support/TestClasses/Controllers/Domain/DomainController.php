@@ -1,8 +1,8 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\Domain;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\Domain;
 
-use Fluent\RouteDiscovery\Attributes\Route;
+use OpenDesa\RouteDiscovery\Attributes\Route;
 
 #[Route(domain: 'first.example.com')]
 class DomainController

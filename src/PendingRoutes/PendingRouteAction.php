@@ -1,10 +1,10 @@
 <?php
 
-namespace Fluent\RouteDiscovery\PendingRoutes;
+namespace OpenDesa\RouteDiscovery\PendingRoutes;
 
-use Fluent\RouteDiscovery\Attributes\DiscoveryAttribute;
-use Fluent\RouteDiscovery\Attributes\Route;
-use Fluent\RouteDiscovery\Attributes\Where;
+use OpenDesa\RouteDiscovery\Attributes\DiscoveryAttribute;
+use OpenDesa\RouteDiscovery\Attributes\Route;
+use OpenDesa\RouteDiscovery\Attributes\Where;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

@@ -44,7 +44,7 @@ return [
      * In most cases, you shouldn't change these.
      */
     'pending_route_transformers' => [
-        ...Fluent\RouteDiscovery\Config::defaultRouteTransformers(),
+        ...OpenDesa\RouteDiscovery\Config::defaultRouteTransformers(),
         //
     ],
 ];

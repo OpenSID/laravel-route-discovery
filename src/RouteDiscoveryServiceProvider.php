@@ -1,8 +1,8 @@
 <?php
 
-namespace Fluent\RouteDiscovery;
+namespace OpenDesa\RouteDiscovery;
 
-use Fluent\RouteDiscovery\Discovery\Discover;
+use OpenDesa\RouteDiscovery\Discovery\Discover;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Spatie\LaravelPackageTools\Package;

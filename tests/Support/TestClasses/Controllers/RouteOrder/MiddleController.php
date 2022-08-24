@@ -1,8 +1,8 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\RouteOrder;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\RouteOrder;
 
-use Fluent\RouteDiscovery\Attributes\Route;
+use OpenDesa\RouteDiscovery\Attributes\Route;
 
 class MiddleController
 {

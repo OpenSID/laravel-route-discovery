@@ -1,9 +1,9 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support;
+namespace OpenDesa\RouteDiscovery\Tests\Support;
 
-use Fluent\RouteDiscovery\RouteDiscoveryServiceProvider;
-use Fluent\RouteDiscovery\RouteRegistrar;
+use OpenDesa\RouteDiscovery\RouteDiscoveryServiceProvider;
+use OpenDesa\RouteDiscovery\RouteRegistrar;
 use Illuminate\Routing\Route;
 use Illuminate\Routing\RouteCollection;
 use Illuminate\Support\Arr;
@@ -22,7 +22,7 @@ class TestCase extends Orchestra
 
         $this->routeRegistrar = (new RouteRegistrar($router))
             ->useBasePath($this->getTestPath('Support'))
-            ->useRootNamespace('Fluent\RouteDiscovery\Tests\Support\\');
+            ->useRootNamespace('OpenDesa\RouteDiscovery\Tests\Support\\');
     }
 
     protected function getPackageProviders($app)

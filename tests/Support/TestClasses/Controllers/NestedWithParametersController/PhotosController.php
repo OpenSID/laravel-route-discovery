@@ -1,8 +1,8 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Controllers\NestedWithParametersController;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Controllers\NestedWithParametersController;
 
-use Fluent\RouteDiscovery\Tests\Support\TestClasses\Models\Photo;
+use OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Models\Photo;
 
 class PhotosController
 {

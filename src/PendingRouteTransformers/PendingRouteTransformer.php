@@ -1,8 +1,8 @@
 <?php
 
-namespace Fluent\RouteDiscovery\PendingRouteTransformers;
+namespace OpenDesa\RouteDiscovery\PendingRouteTransformers;
 
-use Fluent\RouteDiscovery\PendingRoutes\PendingRoute;
+use OpenDesa\RouteDiscovery\PendingRoutes\PendingRoute;
 use Illuminate\Support\Collection;
 
 interface PendingRouteTransformer

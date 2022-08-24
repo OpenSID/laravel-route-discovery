@@ -1,6 +1,6 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Tests\Support\TestClasses\Models;
+namespace OpenDesa\RouteDiscovery\Tests\Support\TestClasses\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Discovery;
+namespace OpenDesa\RouteDiscovery\Discovery;
 
-use Fluent\RouteDiscovery\RouteRegistrar;
+use OpenDesa\RouteDiscovery\RouteRegistrar;
 
 class DiscoverControllers
 {

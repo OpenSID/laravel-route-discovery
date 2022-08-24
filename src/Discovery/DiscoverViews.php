@@ -1,6 +1,6 @@
 <?php
 
-namespace Fluent\RouteDiscovery\Discovery;
+namespace OpenDesa\RouteDiscovery\Discovery;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
