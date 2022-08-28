@@ -114,7 +114,7 @@ class PendingRouteAction
             case 'delete':
                 return ['DELETE'];
             default:
-                return ['GET'];
+                return ['GET', 'POST'];
         }
     }
 
