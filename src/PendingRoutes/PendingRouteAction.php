@@ -109,10 +109,10 @@ class PendingRouteAction
             case 'store':
                 return ['POST'];
             case 'update':
-                return ['PUT', 'PATCH'];
+                return ['PUT', 'PATCH', 'POST'];
             case 'destroy':
             case 'delete':
-                return ['DELETE'];
+                return ['DELETE', 'POST'];
             default:
                 return ['GET', 'POST'];
         }
