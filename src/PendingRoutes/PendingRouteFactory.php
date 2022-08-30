@@ -36,7 +36,7 @@ class PendingRouteFactory
 
         $actions = collect($class->getMethods())
             ->filter(function (ReflectionMethod $method) {
-                return $method->isPublic();
+                return $method->isPublic() && ! $method->isConstructor();
             })
             ->map(function (ReflectionMethod $method) use ($fullyQualifiedClassName) {
                 return new PendingRouteAction($method, $fullyQualifiedClassName);
