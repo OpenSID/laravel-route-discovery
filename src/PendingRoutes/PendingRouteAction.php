@@ -105,7 +105,7 @@ class PendingRouteAction
             case 'create':
             case 'show':
             case 'edit':
-                return ['GET'];
+                return ['GET', 'POST'];
             case 'store':
                 return ['POST'];
             case 'update':
