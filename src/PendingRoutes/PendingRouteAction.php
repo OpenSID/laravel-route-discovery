@@ -5,12 +5,10 @@ namespace OpenDesa\RouteDiscovery\PendingRoutes;
 use OpenDesa\RouteDiscovery\Attributes\DiscoveryAttribute;
 use OpenDesa\RouteDiscovery\Attributes\Route;
 use OpenDesa\RouteDiscovery\Attributes\Where;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use ReflectionAttribute;
 use ReflectionMethod;
-use ReflectionParameter;
 
 class PendingRouteAction
 {
@@ -48,25 +46,10 @@ class PendingRouteAction
 
     public function relativeUri(): string
     {
-        /** @var ReflectionParameter $modelParameter */
-        $modelParameter = collect($this->method->getParameters())->first(function (ReflectionParameter $parameter) {
-            /** @phpstan-ignore-next-line */
-            return is_a(($getType = $parameter->getType()) ? $getType->getName() : null, Model::class, true);
-        });
-
-        $uri = '';
+        $uri = $this->method->getName();
 
         if (! in_array($this->method->getName(), $this->commonControllerMethodNames())) {
             $uri = Str::kebab($this->method->getName());
-        }
-
-        /** @phpstan-ignore-next-line */
-        if ($modelParameter) {
-            if ($uri !== '') {
-                $uri .= '/';
-            }
-
-            $uri .= "{{$modelParameter->getName()}}";
         }
 
         return $uri;
@@ -100,22 +83,7 @@ class PendingRouteAction
      */
     protected function discoverHttpMethods(): array
     {
-        switch ($this->method->name) {
-            case 'index':
-            case 'create':
-            case 'show':
-            case 'edit':
-                return ['GET', 'POST'];
-            case 'store':
-                return ['POST'];
-            case 'update':
-                return ['PUT', 'PATCH', 'POST'];
-            case 'destroy':
-            case 'delete':
-                return ['DELETE', 'POST'];
-            default:
-                return ['GET', 'POST'];
-        }
+        return ['GET', 'POST'];
     }
 
     /**
