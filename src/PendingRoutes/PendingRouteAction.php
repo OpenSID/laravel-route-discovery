@@ -6,7 +6,6 @@ use OpenDesa\RouteDiscovery\Attributes\DiscoveryAttribute;
 use OpenDesa\RouteDiscovery\Attributes\Route;
 use OpenDesa\RouteDiscovery\Attributes\Where;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Str;
 use ReflectionAttribute;
 use ReflectionMethod;
 
@@ -46,13 +45,7 @@ class PendingRouteAction
 
     public function relativeUri(): string
     {
-        $uri = $this->method->getName();
-
-        if (! in_array($this->method->getName(), $this->commonControllerMethodNames())) {
-            $uri = Str::kebab($this->method->getName());
-        }
-
-        return $uri;
+        return $this->method->getName();
     }
 
     public function addWhere(Where $whereAttribute): self
@@ -84,18 +77,6 @@ class PendingRouteAction
     protected function discoverHttpMethods(): array
     {
         return ['GET', 'POST'];
-    }
-
-    /**
-     * @return array<int, string>
-     */
-    protected function commonControllerMethodNames(): array
-    {
-        return [
-            'index', '__invoke', 'get',
-            'show', 'store', 'update',
-            'destroy', 'delete',
-        ];
     }
 
     /**
